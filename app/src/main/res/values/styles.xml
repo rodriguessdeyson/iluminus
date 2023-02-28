@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme"
+        parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/background</item>
+        <item name="colorAccent">@color/light_blue_500</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:windowBackground">@drawable/background</item>
+    </style>
+
+    <style name="TextInputLayoutStyle"
+        parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/gamboge</item>
+        <item name="boxStrokeWidth">1dp</item>
+    </style>
+
+    <!-- Seekbar -->
+    <style
+        name="MySeekBarTheme" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/cyan_500</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <!-- Interact Dialog -->
+    <style name="AlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Used for the buttons -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Used for the title and text -->
+        <item name="android:textColorPrimary">@color/colorText</item>
+        <!-- Used for the background -->
+        <item name="android:background">@drawable/gradient_2</item>
+    </style>
+</resources>

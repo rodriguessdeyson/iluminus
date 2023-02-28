@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_3">
+
+    <TextView
+        android:id="@+id/TextViewSplitColors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Color_Split_Header"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.082" />
+
+    <TextView
+        android:id="@+id/TextViewSplitColorsInfo"
+        android:layout_width="362dp"
+        android:layout_height="56dp"
+        android:gravity="center"
+        android:text="@string/Color_Split_Info"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextViewSplitColors"
+        app:layout_constraintVertical_bias="0.29" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/FloatingActionButtonClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        app:backgroundTint="@color/gamboge"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.929"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044"
+        app:srcCompat="@drawable/ic_close" />
+
+    <TextView
+        android:id="@+id/TextViewSelectColors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/Color_Strip_Color_Title"
+        app:layout_constraintBottom_toTopOf="@+id/LinearLayoutColorSelector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutColorSelector"
+        android:layout_width="232dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="220dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <FrameLayout
+            android:id="@+id/FrameLayoutFirstColor"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="0dp"
+            android:background="@drawable/led_frame">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/FrameLayoutSecondColor"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/led_frame">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/FrameLayoutThirdColor"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/led_frame">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/FrameLayoutFourthColor"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/led_frame">
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ButtonApply"
+        android:layout_width="177dp"
+        android:layout_height="46dp"
+        android:background="@drawable/button_style"
+        android:text="@string/Split_Color_Button_Apply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LinearLayoutColorSelector"
+        app:layout_constraintVertical_bias="0.733" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

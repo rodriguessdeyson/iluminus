@@ -1,0 +1,90 @@
+<resources>
+    <!-- User dialog -->
+    <string name="OkDialog" translatable="false">OK</string>
+    <string name="SettingsSaved">Setting saved successfully!</string>
+    <string name="SettingsFailedSaving">iLuminus could not save the settings. Please, try again.</string>
+
+    <!-- Device Activity -->
+    <string name="DeleteDeviceTitle">Delete device?</string>
+    <string name="DeleteDeviceMessage">Do you want to delete the selected device?</string>
+
+    <!-- Iluminus Activity -->
+    <string name="BlynkServerNotReached">Iluminus could not send request to the server. Please, check your internet connection and try again.</string>
+
+    <!-- Application Name -->
+    <string name="app_name" translatable="false">iluminus</string>
+
+    <!-- Splash Opening -->
+    <string name="DatabaseName" translatable="false">Iluminus</string>
+
+    <!-- Welcome and Setup -->
+    <string name="WelcomeSetup">Hello!\nWelcome to Iluminus\nPlease, choose the connection type to begin.</string>
+    <string name="WelcomeConfiguringBluetoothDevice">Select from the list below the device you want to setup</string>
+    <string name="WelcomeConfiguringBlynkDevice">iLuminus can control Blynk zeRGBa Widget through Webhook using GET method. To setup iLuminus to control the widget of your device, you need to provide the app auth token and the virtual pin to be controlled.</string>
+    <string name="WelcomeAmbientSelector">More than one ambient devices were found. Select from the list below which one to connect.</string>
+    <string name="WelcomeStartButtonBluetooth" translatable="false">Bluetooth</string>
+    <string name="WelcomeStartButtonBlynk" translatable="false">Blynk IoT</string>
+    <string name="Setup_Blynk_Name">Device name</string>
+    <string name="Setup_Blynk_Token">Auth token</string>
+    <string name="Setup_Blynk_Pin">Virtual Pin</string>
+    <string name="Setup_Blynk_PinR">Virtual R Pin</string>
+    <string name="Setup_Blynk_PinG">Virtual G Pin</string>
+    <string name="Setup_Blynk_PinB">Virtual B Pin</string>
+    <string name="Setup_Blynk_MergeRGB">Merge RGB?</string>
+    <string name="Setup_Blynk_Try_Setting">Try and Save</string>
+    <string name="Setting_Field_Empty">This field can\'t be empty</string>
+
+    <!-- Devices Manipulation -->
+    <string name="tvSelectDeviceToEdit">Select the device to edit the settings</string>
+    <string name="BlynkDeviceName">Device Name: %1$s</string>
+
+    <!-- Blynk -->
+    <string name="Blynk_ProgressBar_ConnectingServer">Wait, connecting to the server...</string>
+
+    <!-- Welcome Strings Messages -->
+    <string name="WelcomeSetup_BluetoothNotAvailable">Bluetooth not available</string>
+    <string name="WelcomeSetup_BluetoothNotEnabled">The application requires Bluetooth to be enabled to communicate with the device.</string>
+    <string name="WelcomeSetup_LocationNotEnabled">Location access is required to enable Bluetooth.</string>
+
+    <!-- Main Activity Messages -->
+    <string name="BluetoothDeviceAlreadyConfigured">Paired</string>
+    <string name="Main_No_Device_Found">"No devices found.\nPlease, scan again…" </string>
+    <string name="Main_Select_Device">Select the device…</string>
+    <string name="Main_Turn_On">Turn on</string>
+
+    <!-- Iluminus Strings -->
+    <string name="Iluminus_Device_Connected">Connected</string>
+    <string name="Iluminus_Device_NotConnected">iLuminus could not connected to selected device.\nPlease, try again.</string>
+    <string name="Iluminus_tv1" translatable="false">Iluminus</string>
+    <string name="Iluminus_tv2">Select a color below</string>
+    <string name="Iluminus_Device">Devices</string>
+    <string name="Iluminus_tv3">Brightness</string>
+    <string name="Iluminus_but">Send</string>
+    <string name="Iluminus_Clear_Database">Clean color history.</string>
+    <string name="Iluminus_Saved_Color">Color saved on: </string>
+    <string name="Iluminus_Database_Cleaned">Color history cleaned! </string>
+
+    <string name="Iluminus_Tools">Tools</string>
+    <string name="Iluminus_ColorPalete">Color Palette.</string>
+
+    <!-- Iluminus Strings Messages-->
+
+    <string name="ilu_Close_Title">Disconnect?</string>
+    <string name="ilu_Close_Message">Do you want to disconnect the device?</string>
+    <string name="ilu_yes">Yes</string>
+    <string name="ilu_no">No</string>
+
+    <!-- Progress messages -->
+    <string name="Progress_Searching_Devices_Title">Please, Wait</string>
+    <string name="Progress_Searching_Devices_Message">Searching…</string>
+
+    <!-- Default Value -->
+    <string name="SplashScreen_Color_Leaking" translatable="false">Color leaking from Iluminus.</string>
+    <string name="Color_Split_Header">Split Colors</string>
+    <string name="Color_Split_Info">Set the led strip four different colors.\nThey will be divided creating an stunning effect.</string>
+    <string name="Color_Strip_Color_Title">Select the colors…</string>
+    <string name="Split_Color_Button_Apply">Apply</string>
+    <string name="BlynkDeviceAuthToken">Auth Token: %1$s</string>
+
+
+</resources>

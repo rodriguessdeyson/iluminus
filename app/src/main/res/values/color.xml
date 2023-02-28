@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default App Colors -->
+    <color name="colorPrimary">#30419e</color>
+    <color name="colorPrimaryDark">#2f45a3</color>
+    <color name="colorAccent">#1181c4</color>
+    <color name="colorDarkElevation">#D9202020</color>
+    <color name="colorDarkBackground">#121212</color>
+
+    <!-- All Text Colors are White -->
+    <color name="colorText">#ffffff</color>
+
+    <color name="background">#1d1f2f</color>
+    <color name="background_gradient">#222B67</color>
+    <color name="btnColor">#30354b</color>
+
+    <!-- Toast Text Color -->
+    <color name="textColorToast">#ffffff</color>
+    
+    <!-- Background Gradient -->
+    <color name="purple_500">#9C27B0</color>
+    <color name="deep_purple_500">#673AB7</color>
+    <color name="indigo_500">#3F51B5</color>
+    <color name="blue_500">#2196f3</color>
+    <color name="cyan_500">#00bcd4</color>
+    <color name="light_blue_500">#03A9F4</color>
+    <color name="turquoise">#4BE7BE</color>
+    <color name="summer_sky_blue">#4BB8E7</color>
+    <color name="cornflower_blue">#6176ED</color>
+    <color name="royal_blu">#4F4BE7</color>
+    <color name="gamboge">#eaa11b</color>
+    <color name="tangerine_yellow">#ffc80a</color>
+    <color name="black_ocean">#0F1016</color>
+
+    <!-- Preferences Colors -->
+    <color name="textColorPrimary">#ffffff</color>
+    <color name="textColorSecundary">#ffffff</color>
+    <color name="textColorTerciary">#ffffff</color>
+    <color name="colorPrimaryDark2">#738dca</color>
+    <color name="colorAccent2">#c6aa6b</color>
+
+    <!-- Usual colors -->
+    <color name="redColor">#FF0000</color>
+    <color name="amberColor">#FFBF00</color>
+    <color name="blueColor">#00DDFF</color>
+    <color name="purpleColor">#6F00FF</color>
+</resources>

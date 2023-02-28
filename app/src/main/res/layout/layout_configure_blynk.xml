@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_6">
+
+    <Button
+        android:id="@+id/ButtonTryBlynkSetting"
+        android:layout_width="211dp"
+        android:layout_height="63dp"
+        android:background="@drawable/button_style"
+        android:text="@string/Setup_Blynk_Try_Setting"
+        android:textAllCaps="false"
+        android:textColor="@drawable/button_text_style"
+        android:textSize="18sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.945" />
+
+    <TextView
+        android:id="@+id/TextViewConfigureSetup"
+        android:layout_width="0dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="108dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="@string/WelcomeConfiguringBlynkDevice"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TextViewSettingUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:fontFamily="cursive"
+        android:text="@string/app_name"
+        android:textColor="@color/colorText"
+        android:textSize="30sp"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/ButtonTryBlynkSetting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CheckBoxMerge"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TextInputLayoutName"
+            style="@style/TextInputLayoutStyle"
+            android:layout_width="336dp"
+            android:layout_height="62dp"
+            android:textColorHint="@color/background">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EditTextAppName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/Setup_Blynk_Name"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorText"
+                app:backgroundTint="@color/background" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TextInputLayoutToken"
+            style="@style/TextInputLayoutStyle"
+            android:layout_width="336dp"
+            android:layout_height="62dp"
+            android:textColorHint="@color/background">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EditTextAppToken"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/Setup_Blynk_Token"
+                android:imeOptions="actionNext"
+                android:inputType="textVisiblePassword"
+                android:singleLine="true"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorText"
+                app:backgroundTint="@color/background" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutsPinsControl"
+            android:layout_width="339dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutPinR"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/TextInputLayoutPinR"
+                    style="@style/TextInputLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColorHint="@color/background"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/TextViewConfigureSetup">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/EditTextAppPinR"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/Setup_Blynk_PinR"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:textColor="@color/colorText"
+                        android:textColorHint="@color/colorText"
+                        app:backgroundTint="@color/background" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutPinG"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/TextInputLayoutPinG"
+                    style="@style/TextInputLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColorHint="@color/background"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/TextViewConfigureSetup">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/EditTextAppPinG"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/Setup_Blynk_PinG"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:textColor="@color/colorText"
+                        android:textColorHint="@color/colorText"
+                        app:backgroundTint="@color/background" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutPinB"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/TextInputLayoutPinB"
+                    style="@style/TextInputLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColorHint="@color/background"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/TextViewConfigureSetup">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/EditTextAppPinB"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/Setup_Blynk_PinB"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:textColor="@color/colorText"
+                        android:textColorHint="@color/colorText"
+                        app:backgroundTint="@color/background" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutPin"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/TextInputLayoutPin"
+                    style="@style/TextInputLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColorHint="@color/background"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/TextViewConfigureSetup">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/EditTextAppPin"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/Setup_Blynk_Pin"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:textColor="@color/colorText"
+                        android:textColorHint="@color/colorText"
+                        app:backgroundTint="@color/background" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/CheckBoxMerge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="@string/Setup_Blynk_MergeRGB"
+        android:textColor="@color/colorText"
+        app:buttonTint="@color/turquoise"
+        app:layout_constraintBottom_toTopOf="@+id/ButtonTryBlynkSetting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextViewConfigureSetup"
+        app:layout_constraintVertical_bias="0.096"
+        app:useMaterialThemeColors="false" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

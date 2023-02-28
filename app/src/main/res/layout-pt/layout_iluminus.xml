@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayoutIluminus"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_ocean"
+    tools:context="com.rad.iluminus.IluminusBluetoothActivity">
+
+    <View
+        android:id="@+id/View"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/deep_purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextViewTitle" />
+
+    <com.skydoves.colorpickerview.ColorPickerView
+        android:id="@+id/ColorPickerView"
+        android:layout_width="315dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="84dp"
+        app:alpha_selector="0.8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextViewTitle"
+        app:palette="@drawable/color_picker"
+        app:selector="@drawable/wheel">
+
+    </com.skydoves.colorpickerview.ColorPickerView>
+
+    <TextView
+        android:id="@+id/TextViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="cursive"
+        android:text="@string/Iluminus_tv1"
+        android:textColor="@color/colorText"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutTools"
+        android:layout_width="313dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/ButtonSendColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ColorPickerView">
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutColorTool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/ViewLayoutFastColorSelected1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="24dp"
+                android:background="@color/redColor"
+                android:baselineAligned="false" />
+
+            <View
+                android:id="@+id/ViewLayoutFastColorSelected2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="24dp"
+                android:background="@color/amberColor">
+
+            </View>
+
+            <View
+                android:id="@+id/ViewLayoutFastColorSelected3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="24dp"
+                android:background="@color/colorText" />
+
+            <View
+                android:id="@+id/ViewLayoutFastColorSelected4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="24dp"
+                android:background="@color/purpleColor" />
+
+            <View
+                android:id="@+id/ViewLayoutFastColorSelected5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/blueColor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutBrightnessTool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TextViewBrightness"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="@string/Iluminus_tv3"
+                android:textColor="@color/colorText"
+                android:textSize="18sp" />
+
+            <com.skydoves.colorpickerview.sliders.BrightnessSlideBar
+                android:id="@+id/BrightnessSlide"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                app:borderColor_BrightnessSlider="?attr/colorPrimaryDark"
+                app:borderSize_BrightnessSlider="1"
+                app:selector_BrightnessSlider="@drawable/wheel" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ButtonSendColor"
+        android:layout_width="170dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/button_style"
+        android:text="@string/Iluminus_but"
+        android:textColor="@color/colorText"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/FloatingActionButtonSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:rotation="45"
+        app:backgroundTint="@color/indigo_500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LinearLayoutTools"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@mipmap/ic_setting"
+        app:tint="@android:color/white" />
+
+    <include
+        android:id="@+id/SplitLedStrip"
+        layout="@layout/layout_colors_split"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/ColorHistory"
+        layout="@layout/layout_color_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/SwitchTurnOnOff"
+        android:layout_width="102dp"
+        android:layout_height="31dp"
+        android:text="@string/Main_Turn_On"
+        android:textColor="@color/colorText"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewSummary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.818"
+        app:layout_constraintStart_toEndOf="@+id/textViewSummary"
+        app:layout_constraintTop_toTopOf="@+id/textViewSummary"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <Spinner
+        android:id="@+id/SpinnerDevices"
+        android:layout_width="164dp"
+        android:layout_height="49dp"
+        android:dropDownWidth="match_parent"
+        android:gravity="center"
+        android:popupBackground="@drawable/gradient_2"
+        android:background="@color/deep_purple_500"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toTopOf="@+id/View"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/TextViewTitle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/Iluminus_tv2"
+        android:textColor="@color/colorText"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/ColorPickerView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/View"
+        app:layout_constraintVertical_bias="0.446" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/FloatingActionButtonDevices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/livingroom_white"
+        android:visibility="gone"
+        app:backgroundTint="@color/purple_500"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/FloatingActionButtonSettings"
+        app:layout_constraintEnd_toEndOf="@+id/FloatingActionButtonSettings"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="@+id/FloatingActionButtonSettings"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977"
+        app:tint="@android:color/white" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/FloatingActionButtonSplit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ledeffect_white"
+        android:visibility="gone"
+        app:backgroundTint="@color/purple_500"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/FloatingActionButtonSettings"
+        app:layout_constraintEnd_toEndOf="@+id/FloatingActionButtonSettings"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="@+id/FloatingActionButtonSettings"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.89"
+        app:tint="@android:color/white" />
+</androidx.constraintlayout.widget.ConstraintLayout>
